@@ -3,3 +3,5 @@
 ##Run
 
 To run the test, execute `mvn test` from the command line.
+open eclipse
+
