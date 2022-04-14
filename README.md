@@ -1,5 +1,5 @@
 # AspireApp - Odoo
 
-##Run
+## Run
 
 To run the test, execute `mvn test` from the command line.
