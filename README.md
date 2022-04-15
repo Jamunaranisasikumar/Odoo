@@ -6,7 +6,7 @@ Create New Inventory and Add the created Inventory into manufacturing item and T
 2.Install Maven
 
 ### Installing
-1.Clone this project or download in zip and extract
+1.Clone this project from master branch or download in zip and extract
 ### Built With
 Selenium + TestNG + PageObjectModel
 ### Content of each File
