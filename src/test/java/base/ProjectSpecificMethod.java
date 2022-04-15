@@ -21,7 +21,7 @@ import org.testng.annotations.AfterMethod;
 		public RemoteWebDriver driver;
 		public String excelFilePath;
 		
-		@Parameters()
+		
 		@BeforeMethod
 		public void beforemethod() throws IOException {
 			//This class help me to read Properties file 
@@ -45,7 +45,7 @@ import org.testng.annotations.AfterMethod;
 		}
 		@AfterMethod
 		public void aftermethod() {
-			driver.close();
+		driver.close();
 		}
 		@DataProvider(name ="TC001_DATA")
 		public String[][] testdata() throws IOException {

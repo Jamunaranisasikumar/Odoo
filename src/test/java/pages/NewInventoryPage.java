@@ -4,21 +4,30 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import base.ProjectSpecificMethod;
 
 public class NewInventoryPage  extends ProjectSpecificMethod {
+	WebDriverWait wait ;
+
 	public NewInventoryPage(RemoteWebDriver driver) {
 		this.driver = driver;
 		}
 	public NewInventoryPage enterProductName(String ProductName) throws InterruptedException {
-		Thread.sleep(30);
+		//Thread.sleep(30);
+		wait = new WebDriverWait(driver,30);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//h1/div")));
+
 		WebElement productname = driver.findElement(By.xpath("//div[@class='d-flex']//input[contains(@class,o_text_overflow)]"));
 		productname.sendKeys(ProductName,Keys.ENTER);
 		return this;
 	}
 	public NewInventoryPage clicksave() throws InterruptedException {
-		Thread.sleep(2000);
+		wait = new WebDriverWait(driver,30);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[@title='Save record']")));
+
 		driver.findElement(By.xpath("//button[@title='Save record']")).click();
 		return this;
 	}
