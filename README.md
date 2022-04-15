@@ -31,7 +31,8 @@ To run the test, execute `mvn test` from the command line
 ### TestReport
 Once run is completed, to see the test result goto test-output/index.html report 
 
-![image](https://user-images.githubusercontent.com/100022413/163473685-bb7c8c81-5642-4359-b7ac-a1c1fdea2026.png)
+![image](https://user-images.githubusercontent.com/100022413/163516318-96a08ab5-f068-4374-a4b2-8812ec8730ec.png)
+
 
 ### Sample Report:
 
